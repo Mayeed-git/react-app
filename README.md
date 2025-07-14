@@ -16,97 +16,78 @@
 
 MovieFlix is a modern movie discovery platform that combines the power of React.js with Appwrite's backend capabilities to deliver a Netflix-like experience. Perfect for movie enthusiasts and developers looking to learn modern web development practices.
 
-## ✨ Key Features
+## <a name="features">🔋 Features</a>
 
-### For Users
-- 🔍 **Smart Search**: Real-time movie search with debouncing
-- 📈 **Trending Movies**: Dynamic algorithm-based trending section
-- 🎯 **Rich Movie Details**: 
-  - Cast information
-  - Ratings and reviews
-  - Release dates
-  - Movie overviews
-  - Similar movie recommendations
-- 💫 **Modern UI/UX**:
-  - Netflix-style hover effects
-  - Smooth transitions
-  - Responsive design
-  - Dynamic loading states
+👉 **Browse All Movies**: Explore a wide range of movies available on the platform.
 
-### For Developers
-- 🏗️ **Clean Architecture**: Well-organized project structure
-- 🔄 **Reusable Components**: Modular and maintainable code
-- 📱 **Responsive Design**: Mobile-first approach
-- 🚀 **Performance Optimized**: Fast loading and smooth interactions
+👉 **Search Movies**: Easily search for specific movies using a search function.
 
-## 🛠️ Tech Stack
+👉 **Trending Movies Algorithm**: Displays trending movies based on a dynamic algorithm.
 
-- **Frontend**: 
-  - React.js with Vite
-  - TailwindCSS for styling
-  - React Router for navigation
-- **Backend**: 
-  - Appwrite for backend services
-  - TMDB API for movie data
-- **Development**:
-  - ESLint for code quality
-  - Prettier for code formatting
-  - Vite for fast development
+👉 **Modern UI/UX**: A sleek and user-friendly interface designed for a great experience.
 
-## 🚀 Getting Started
+👉 **Responsiveness**: Fully responsive design that works seamlessly across devices.
 
-### Prerequisites
+and many more, including code architecture and reusability
 
-- Node.js (v14 or higher)
-- npm or yarn
-- Appwrite account
-- TMDB API key
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-### Installation
+- **[Appwrite](https://appwrite.io/)** is an open-source Backend-as-a-Service (BaaS) platform that provides developers with a set of APIs to manage authentication, databases, storage, and more, enabling rapid development of secure and scalable applications.
 
-1. **Clone the repository**
+- **[React.js](https://react.dev/reference/react)** is a JavaScript library developed by Meta for building user interfaces. It allows developers to create reusable UI components that manage their own state, leading to more efficient and predictable code. React is widely used for developing single-page applications (SPAs) due to its virtual DOM that improves performance and ease of maintenance.
+
+- **[React-use](https://github.com/streamich/react-use)** is a collection of essential React hooks that simplify common tasks like managing state, side effects, and lifecycle events, promoting cleaner and more maintainable code in React applications.
+
+- **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that provides low-level utility classes to build custom designs without writing custom CSS, enabling rapid and responsive UI development.
+
+- **[Vite](https://vite.dev/)** is a modern build tool that provides a fast development environment for frontend projects. It offers features like hot module replacement (HMR) and optimized builds, enhancing the development experience and performance.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Cloning the Repository**
+
 ```bash
-git clone https://github.com/your-username/moodflix.git
-cd moodflix
+git clone https://github.com/adrianhajdin/react-movies.git
+cd react-movies
+
 ```
 
-2. **Install dependencies**
+**Installation**
+
+Install the project dependencies using npm:
+
 ```bash
 npm install
 ```
 
-3. **Environment Setup**
+**Set Up Environment Variables**
 
-Create a `.env.local` file in the root directory:
+Create a new file named `.env.local` in the root of your project and add the following content:
+
 ```env
-VITE_TMDB_API_KEY=your_tmdb_api_key
-VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
-VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
-VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+VITE_TMDB_API_KEY=
+
+VITE_APPWRITE_PROJECT_ID=
+VITE_APPWRITE_DATABASE_ID=
+VITE_APPWRITE_COLLECTION_ID=
 ```
 
-4. **Start the development server**
+Replace the placeholder values with your actual **[TheMovieDatabase API](https://developer.themoviedb.org/reference/intro/getting-started)** and **[Appwrite](https://apwr.dev/JSM050)** credentials.
+
+**Running the Project**
+
 ```bash
 npm run dev
 ```
 
-Visit `http://localhost:5173` to view the application.
-
-## 🔧 Configuration
-
-### Appwrite Setup
-
-1. Create an account on [Appwrite](https://appwrite.io/)
-2. Create a new project
-3. Set up a database with the following schema:
-   - `query` (string)
-   - `title` (string)
-   - `poster_url` (string)
-   - `movie_id` (string)
-   - `count` (number)
-
-### TMDB Setup
-
-1. Create an account on [TMDB](https://www.themoviedb.org/)
-2. Get your API key from the settings
-3. Add the API key to your environment variables
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
