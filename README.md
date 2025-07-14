@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/hero.png" alt="Moodflix Banner" width="400" />
+  <img src="public/hero-img.png" alt="Moodflix Banner" width="400" />
   
   # Moodflix - Modern Movie Discovery Platform
   
